@@ -58,5 +58,5 @@ RUN apt-get clean && \
 
 # expose the working directory, the Tomcat port, the BrowserSync ports
 VOLUME ["/home/jhipster/app"]
-EXPOSE 8080 3000 3001
+EXPOSE 9090 3000 3001
 CMD    ["tail", "-f", "/home/jhipster/banner.txt"]
