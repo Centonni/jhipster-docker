@@ -41,13 +41,13 @@ RUN groupadd jhipster && useradd jhipster -s /bin/bash -m -g jhipster -G jhipste
 RUN echo 'jhipster:jhipster' |chpasswd
 
 # install the sample app
-RUN cd /home/jhipster && \
-    wget https://github.com/jhipster/jhipster-sample-app/archive/v${JHIPSTER_VERSION}.zip && \
-    unzip v${JHIPSTER_VERSION}.zip && \
-    rm v${JHIPSTER_VERSION}.zip
-RUN cd /home/jhipster/jhipster-sample-app-${JHIPSTER_VERSION} && npm install
-RUN cd /home && chown -R jhipster:jhipster /home/jhipster
-RUN ln -s /home/jhipster/jhipster-sample-app-${JHIPSTER_VERSION} /home/jhipster/jhipster-sample-app
+#RUN cd /home/jhipster && \
+#    wget https://github.com/jhipster/jhipster-sample-app/archive/v${JHIPSTER_VERSION}.zip && \
+#    unzip v${JHIPSTER_VERSION}.zip && \
+#    rm v${JHIPSTER_VERSION}.zip
+#RUN cd /home/jhipster/jhipster-sample-app-${JHIPSTER_VERSION} && npm install
+#RUN cd /home && chown -R jhipster:jhipster /home/jhipster
+#RUN ln -s /home/jhipster/jhipster-sample-app-${JHIPSTER_VERSION} /home/jhipster/jhipster-sample-app
 
 # add banner
 ADD banner.txt /home/jhipster/banner.txt
