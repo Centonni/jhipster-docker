@@ -1,5 +1,5 @@
 Docker build for JHipster
-==================
+===================
 
 This is the Docker build for JHipster, for more information read our documentation at [http://jhipster.github.io/installation.html](http://jhipster.github.io/installation.html).
 
